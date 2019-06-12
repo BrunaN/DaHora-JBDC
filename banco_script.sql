@@ -1,4 +1,4 @@
-﻿﻿﻿CREATE TABLE graduacao(
+﻿﻿CREATE TABLE graduacao(
 	id SERIAL,
 	nome varchar(30) NOT NULL,
 	horas int NOT NULL,
@@ -8,7 +8,7 @@
 INSERT INTO graduacao VALUES (1, 'Ciência da Computação', 192);
 INSERT INTO graduacao VALUES (2, 'Design Digital', 192);
 INSERT INTO graduacao VALUES (3, 'Engenharia da Computação', 192);
-INSERT INTO graduacao VALUES (4, 'Engenharia de Softwre', 288);
+INSERT INTO graduacao VALUES (4, 'Engenharia de Software', 288);
 INSERT INTO graduacao VALUES (5, 'Redes de Computadores', 192);
 INSERT INTO graduacao VALUES (6, 'Sistemas de Informação', 288);
 

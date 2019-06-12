@@ -13,7 +13,6 @@ export class AttestedService {
     url: string = 'http://localhost:8080/dahora/api/attesteds';
     urlAttestedsFromUser: string = 'http://localhost:8080/dahora/api/users/';
     
-
     attesteds: Attested[] = [];
 
     constructor(private http: Http) { }
@@ -60,7 +59,7 @@ export class AttestedService {
         return this.http.delete((this.url + '/' + attested._id))
                         .map((response: Response) => {
                             this.attesteds.splice( this.attesteds.indexOf(attested), 1 );
-
+                            
                             console.log(this.attesteds);
                         })
                         .catch((error: Response) => Observable.throw(error));

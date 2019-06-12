@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Attested } from '../models/attested.model';
 import { AttestedService } from '../services/attested.service';
+import { LoginService } from '../services/login.service';
 
 @Component({
   selector: 'app-activity',
@@ -11,7 +12,7 @@ export class ActivityComponent implements OnInit {
 
   @Input() attested: Attested;
 
-  constructor(private attestedService: AttestedService) { }
+  constructor(private attestedService: AttestedService, private loginService: LoginService) { }
 
   ngOnInit() {
   }
