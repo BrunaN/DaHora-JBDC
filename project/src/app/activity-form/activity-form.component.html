@@ -1,0 +1,39 @@
+<div id="cdthrscomp">
+  <form>
+    <div class="form-group">
+    
+      <label for="tituloAtv">Título da atividade:</label>
+      <input [(ngModel)]="title" name="title" #titleInput type="text" id="tituloAtv" class="form-control" placeholder="Digite o título da atividade complementar: ">
+    </div>
+
+    <div class="form-group">
+      <label for="categoriaAtv">Categoria da atividade:</label>
+        <!-- <select class="form-control" name="categoriaAtv" id="categoriaAtv"> -->
+        <select class="form-control" [(ngModel)]="type" name="type" #typeInput="ngModel" id="categoriaAtv">
+          <option value="-1" disabled="disabled">Selecione a categoria da atividade:</option>
+          <option *ngFor="let type of categorias" value={{type._id}}>{{type.name}}</option>
+
+          <option value="0">Iniciação à pesquisa ou ensino ou atividades de extensão em áreas correlatadas ao curso</option>
+          <option value="1">Artístico culturais e esportivas</option>
+          <option value="2">Participação e/ou organização de eventos em áreas correlatas</option>
+          <option value="3">Experiências ligadas à formação profissional e/ou correlatas</option>
+          <option value="4">Produção Técnica e/ou Científica em áreas correlatas</option>
+          <option value="5">Vivências de gestão</option>
+          <option value="6">Outras atividades</option>
+        </select>
+    </div>
+      
+    <div class="form-group">
+      <label for="qtdHoras">Quantidade de Horas da atividade:</label>
+      <input [(ngModel)]="hours" name="hours" #hoursInput type="number" id="qtdHoras" class="form-control" placeholder="Digite a quantidade de horas da atividade complementar: ">
+    </div>
+      
+    <div class="form-group">
+      <label for="certificadoAtv">Certificado de atividade:</label>
+      <input [(ngModel)]="_file" name="file" #fileInput type="file" (change)="handleFileInput($event)" id="certificadoAtv" placeholder="Escolha o certificado da atividade complementar.">
+    </div>
+
+    <button type="submit" class="btn btn-primary" (click)="insertAttested($event)"> Enviar </button>     
+
+  </form>
+</div>

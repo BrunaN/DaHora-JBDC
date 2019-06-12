@@ -1,0 +1,83 @@
+<div class="container-fluid">
+  <div *ngIf="this.loginService.hasToken()">
+
+    <div class="welcome">
+      <div>
+        Bem-vindo ao Da:Hora, {{this.loginService.user.name}}
+      </div>
+      <div>
+        Para o curso de
+        <b>{{this.graduation.name}}</b> são necessárias
+        <b>{{this.graduation.hours}}</b> horas de Atividades Complementares
+      </div>
+    </div>
+
+    <div class="hours">
+      <div>
+        {{this.loginService.user.hours}} horas cadastradas
+      </div>
+      <div class="right" *ngIf="this.loginService.user.hours > this.loginService.user.graduation.hours">
+        Suas horas complementares foram concluídas!
+      </div>
+
+      <div class="right" *ngIf="this.loginService.user.hours <= this.graduation.hours">
+        Faltam {{this.graduation.hours - this.loginService.user.hours}} horas para completar suas atividades!
+      </div>
+    </div>
+
+    <div *ngIf="attesteds.length >= 1">
+      <div class="list-group">
+        <div *ngFor="let attested of attesteds">
+          <app-activity [attested] = attested>
+
+          </app-activity>
+        </div>
+      </div>
+
+      <div class="add">
+        <a href="#" routerLink="/activity-form" class="btn btn-secondary" role="button" aria-pressed="true">Adicionar</a>
+      </div>
+    </div>
+
+    <div class="zero" *ngIf="attesteds.length == 0">
+      Você não possui nenhuma atividade Complementar
+      <div>
+        <a href="#" routerLink="/activity-form" class="btn btn-secondary" role="button" aria-pressed="true">Adicionar</a>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+
+  <div class="home" *ngIf="!this.loginService.hasToken()">
+    <div class="row" id="first">
+      <div class="text col-6">
+        O Da Hora é um sistema de cadastro de Atividades Complementares
+      </div>
+      <div class="col img">
+        <img src="../../assets/img/check-form.png" alt="">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col img">
+        <img src="../../assets/img/clock.png" alt="">
+      </div>
+      <div class="text col-6 second">
+        No Da Hora você pode visualizar a quantidade de horas de acordo com o necessário para o seu curso!
+      </div>
+    </div>
+
+    <div class="calm">
+      <h2>
+        Quer utilizar o sistema agora mesmo?
+      </h2>
+      <button type="button" class="btn btn-secondary" routerLink="/cadastro">Cadastre-se</button>
+      <button type="button" class="btn btn-outline-secondary" routerLink="/login">Login</button>
+    </div>
+
+  </div>
+</div>

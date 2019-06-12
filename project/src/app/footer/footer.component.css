@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+footer{
+    margin-top: 50px;
+}
+
+.links{
+    background-color: #000000;
+    text-align: center;
+    display: block;
+    padding: 18px 0;
+}
+
+.links ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 6px 15px;
+}
+
+.links a{
+    color: #dddddd;
+    padding: 6px;
+    font-size: 17px;
+    font-family: sans-serif;
+}
+
+.links a:hover{
+    color: #ffffff;
+    transition: 0.8s;
+}
+
+.cp{
+    background-color: #262626;
+    color: #dddddd;
+    padding: 15px 20px;
+    font-size: 12px;
+}

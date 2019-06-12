@@ -1,0 +1,22 @@
+h3{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+
+.profile{
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+input{
+    width: 100%;
+}
+
+.form-group{
+    width: 400px;
+}

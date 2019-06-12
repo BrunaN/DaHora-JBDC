@@ -1,0 +1,46 @@
+.navbar {
+    padding: 28px 180px;
+    box-shadow: 1px 1px 2px #dddddd;
+}
+
+.navbar-brand{
+    padding: 0;
+    height: 40px;
+}
+
+.navbar-brand img{
+    height: 100%;
+}
+
+.navbar-nav{
+    width: 100%;
+    display: inline;
+}
+
+.drop{
+    width: 100%;
+    display: inline;
+}
+
+.dropdown{
+    float: right;
+}
+
+.nav-item{
+    font-size: 19px;
+}
+
+.nav-link{
+    float: right;
+    color: #000000;
+}
+
+.nav-link:hover{
+    color: #262626;
+}
+
+.btn{
+    background-color: none;
+    background: none;
+    font-size: 18px;
+}

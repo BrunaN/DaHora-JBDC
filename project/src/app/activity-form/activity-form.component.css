@@ -1,0 +1,19 @@
+#cdthrscomp {
+    justify-content: center;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+input {
+    width: 100%;
+}
+
+option {
+    font-size: 13px;
+}
+.form-group {
+    width: 450px;
+}

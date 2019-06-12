@@ -1,0 +1,107 @@
+.container-fluid{
+    padding: 50px 180px;
+}
+
+.welcome{
+    padding-bottom: 7px;
+}
+
+.welcome div{
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+.hours{
+    border-top: 3px solid #545b62;
+}
+
+.hours div{
+    display: inline-block;
+    width: 50%;
+    font-size: 20px;
+    margin-top: 6px;
+}
+
+.hours .right{
+    text-align: right;
+}
+
+.list-group{
+    margin-top: 10px;
+    padding: 35px;
+    padding-bottom: 10px;
+}
+
+.add{
+    padding: 0 35px;
+}
+
+.list-group-item{
+    padding-bottom: 0;
+}
+
+.home{
+    padding: 0 100px;
+}
+
+.row{
+    margin-bottom: 50px;
+}
+
+#first{
+    border-bottom: 2px solid black;
+    padding-bottom: 40px;
+}
+
+.text{
+    padding: 70px 0;
+    font-size: 30px;
+}
+
+.second{
+    padding: 50px 0;
+}
+
+.img{
+    text-align: center;
+    margin: 30px;
+    height: 200px;
+}
+
+.img img{
+    height: 100%;
+}
+
+.calm{
+    text-align: center;
+    border: 2px solid black;
+    padding: 60px;
+}
+
+button{
+    margin-right: 10px;
+    margin-top: 20px;
+    height: 40px;
+    font-size: 18px;
+}
+
+.zero{
+    text-align: center;
+    font-size: 20px;
+    color: #545b62;
+    border: solid 1px #000000;
+    width: 650px;
+    margin: auto;
+    margin-top: 60px;
+    padding: 25px;
+}
+
+.zero div{
+    margin-top: 20px;
+}
+
+.btn{
+    font-size: 18px;
+    padding: 8px 25px;
+    border-radius: 5px;
+}
